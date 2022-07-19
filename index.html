@@ -1,0 +1,737 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+      
+        <meta charset="utf-8"/> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/> 
+        <meta name="keywords" content=""/> 
+        <meta name="description" content=""/> 
+        <meta name="author" content=""/> 
+        <title>TECNO</title>         
+        <link href="lity.css" rel="stylesheet"/> 
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css"/> 
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/> 
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700|Raleway:400,700&display=swap" rel="stylesheet"/> 
+        <link href="css/style.css" rel="stylesheet"/> 
+        <link href="css/responsive.css" rel="stylesheet"/> 
+        <style>.fnc-slider { overflow: hidden; box-sizing: border-box; position: relative; height: 100vh; } .fnc-slider *, .fnc-slider *:before, .fnc-slider *:after { box-sizing: border-box; } .fnc-slider__slides { position: relative; height: 100%; transition: transform 1s 0.6666666667s; } .fnc-slider .m--blend-dark .fnc-slide__inner { background-color: #8a8a8a; } .fnc-slider .m--blend-dark .fnc-slide__mask-inner { background-color: #575757; } .fnc-slider .m--navbg-dark { background-color: #575757; } .fnc-slider .m--blend-green .fnc-slide__inner { background-color: #6d9b98; } .fnc-slider .m--blend-green .fnc-slide__mask-inner { background-color: #42605E; } .fnc-slider .m--navbg-green { background-color: #42605E; } .fnc-slider .m--blend-red .fnc-slide__inner { background-color: #ea2329; } .fnc-slider .m--blend-red .fnc-slide__mask-inner { background-color: #990e13; } .fnc-slider .m--navbg-red { background-color: #990e13; } .fnc-slider .m--blend-blue .fnc-slide__inner { background-color: #59aecb; } .fnc-slider .m--blend-blue .fnc-slide__mask-inner { background-color: #2D7791; } .fnc-slider .m--navbg-blue { background-color: #2D7791; } .fnc-slide { overflow: hidden; position: absolute; left: 0; top: 0; width: 100%; height: 100%; transform: translate3d(0, 0, 0); } .fnc-slide.m--before-sliding { z-index: 2 !important; transform: translate3d(100%, 0, 0); } .fnc-slide.m--active-slide { z-index: 1; transition: transform 1s 0.6666666667s ease-in-out; transform: translate3d(0, 0, 0); } .fnc-slide__inner { position: relative; height: 100%; background-size: cover; background-position: center top; transform: translate3d(0, 0, 0); } .m--global-blending-active .fnc-slide__inner, .m--blend-bg-active .fnc-slide__inner { background-blend-mode: luminosity; } .m--before-sliding .fnc-slide__inner { transform: translate3d(-100%, 0, 0); } .m--active-slide .fnc-slide__inner { transition: transform 1s 0.6666666667s ease-in-out; transform: translate3d(0, 0, 0); } .fnc-slide__mask { overflow: hidden; z-index: 1; position: absolute; right: 60%; top: 15%; width: 50.25vh; height: 67vh; margin-right: -90px; clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0, 6vh 0, 6vh 61vh, 44vh 61vh, 44vh 6vh, 6vh 6vh); transform-origin: 50% 0; transition-timing-function: ease-in-out; } .m--before-sliding .fnc-slide__mask { transform: rotate(-10deg) translate3d(200px, 0, 0); opacity: 0; } .m--active-slide .fnc-slide__mask { transition: transform 0.7s 1.2222222222s, opacity 0.35s 1.2222222222s; transform: translate3d(0, 0, 0); opacity: 1; } .m--previous-slide .fnc-slide__mask { transition: transform 0.7s 0.3333333333s, opacity 0.35s 0.6833333333s; transform: rotate(10deg) translate3d(-200px, 0, 0); opacity: 0; } .fnc-slide__mask-inner { z-index: -1; position: absolute; left: 50%; top: 50%; width: 100vw; height: 100vh; margin-left: -50vw; margin-top: -50vh; background-size: cover; background-position: center center; background-blend-mode: luminosity; transform-origin: 50% 16.5vh; transition-timing-function: ease-in-out; } .m--before-sliding .fnc-slide__mask-inner { transform: translateY(0) rotate(10deg) translateX(-200px) translateZ(0); } .m--active-slide .fnc-slide__mask-inner { transition: transform 0.7s 1.2222222222s; transform: translateX(0); } .m--previous-slide .fnc-slide__mask-inner { transition: transform 0.7s 0.3333333333s; transform: translateY(0) rotate(-10deg) translateX(200px) translateZ(0); } .fnc-slide__content { z-index: 2; position: absolute; left: 40%; top: 40%; } .fnc-slide__heading { margin-bottom: 10px; text-transform: uppercase; } .fnc-slide__heading-line { overflow: hidden; position: relative; padding-right: 20px; font-size: 100px; color: #fff; word-spacing: 10px; } .fnc-slide__heading-line:nth-child(2) { padding-left: 30px; } .m--before-sliding .fnc-slide__heading-line { transform: translateY(100%); } .m--active-slide .fnc-slide__heading-line { transition: transform 1.5s 1s; transform: translateY(0); } .m--previous-slide .fnc-slide__heading-line { transition: transform 1.5s; transform: translateY(-100%); } .fnc-slide__heading-line span { display: block; } .m--before-sliding .fnc-slide__heading-line span { transform: translateY(-100%); } .m--active-slide .fnc-slide__heading-line span { transition: transform 1.5s 1s; transform: translateY(0); } .m--previous-slide .fnc-slide__heading-line span { transition: transform 1.5s; transform: translateY(100%); } .fnc-slide__action-btn { position: relative; margin-left: 200px; padding: 5px 15px; font-size: 20px; line-height: 1; color: transparent; border: none; text-transform: uppercase; background: transparent; cursor: pointer; text-align: center; outline: none; } .fnc-slide__action-btn span { position: absolute; left: 0; top: 0; width: 100%; height: 100%; perspective: 1000px; transform-style: preserve-3d; transition: transform 0.3s; transform-origin: 50% 0; line-height: 30px; color: #fff; } .fnc-slide__action-btn span:before { content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 100%; border: 2px solid #fff; border-top: none; border-bottom: none; } .fnc-slide__action-btn span:after { content: attr(data-text); position: absolute; left: 0; top: 0; width: 100%; height: 100%; line-height: 30px; background: #1F2833; opacity: 0; transform-origin: 50% 0; transform: translateY(100%) rotateX(-90deg); transition: opacity 0.15s 0.15s; } .fnc-slide__action-btn:hover span { transform: rotateX(90deg); } .fnc-slide__action-btn:hover span:after { opacity: 1; transition: opacity 0.15s; } .fnc-nav { z-index: 5; position: absolute; right: 0; bottom: 0; } .fnc-nav__bgs { z-index: -1; overflow: hidden; position: absolute; left: 0; top: 0; width: 100%; height: 100%; } .fnc-nav__bg { position: absolute; left: 0; top: 0; width: 100%; height: 100%; } .fnc-nav__bg.m--nav-bg-before { z-index: 2 !important; transform: translateX(100%); } .fnc-nav__bg.m--active-nav-bg { z-index: 1; transition: transform 1s 0.6666666667s; transform: translateX(0); } .fnc-nav__controls { font-size: 0; } .fnc-nav__control { overflow: hidden; position: relative; display: inline-block; vertical-align: top; width: 100px; height: 50px; font-size: 14px; color: #fff; text-transform: uppercase; background: transparent; border: none; outline: none; cursor: pointer; transition: background-color 0.5s; } .fnc-nav__control.m--active-control { background: #1F2833; } .fnc-nav__control-progress { position: absolute; left: 0; bottom: 0; width: 100%; height: 2px; background: #fff; transform-origin: 0 50%; transform: scaleX(0); transition-timing-function: linear !important; } .m--with-autosliding .m--active-control .fnc-nav__control-progress { transform: scaleX(1); } .m--prev-control .fnc-nav__control-progress { transform: translateX(100%); transition: transform 0.5s !important; } .m--reset-progress .fnc-nav__control-progress { transform: scaleX(0); transition: transform 0s 0s !important; } .m--autosliding-blocked .fnc-nav__control-progress { transition: all 0s 0s !important; transform: scaleX(0) !important; } /* NOT PART OF COMMON SLIDER STYLES */body { margin: 0; } .demo-cont { overflow: hidden; position: relative; height: 100vh; perspective: 1500px; background: #000; } .demo-cont__credits { box-sizing: border-box; overflow-y: auto; z-index: 1; position: absolute; right: 0; top: 0; width: 400px; height: 100%; padding: 20px 10px 30px; background: #303030; font-family: 'Open Sans', Helvetica, Arial, sans-serif; color: #fff; text-align: center; transition: transform 0.7s; transform: translate3d(100%, 0, 0) rotateY(-45deg); will-change: transform; } .credits-active .demo-cont__credits { transition: transform 0.7s 0.2333333333s; transform: translate3d(0, 0, 0); } .demo-cont__credits *, .demo-cont__credits *:before, .demo-cont__credits *:after { box-sizing: border-box; } .demo-cont__credits-close { position: absolute; right: 20px; top: 20px; width: 28px; height: 28px; cursor: pointer; } .demo-cont__credits-close:before, .demo-cont__credits-close:after { content: ""; position: absolute; left: 0; top: 50%; width: 100%; height: 2px; margin-top: -1px; background: #fff; } .demo-cont__credits-close:before { transform: rotate(45deg); } .demo-cont__credits-close:after { transform: rotate(-45deg); } .demo-cont__credits-heading { text-transform: uppercase; font-size: 40px; margin-bottom: 20px; } .demo-cont__credits-img { display: block; width: 100%; height: 100%; margin: 0 auto 30px; border-radius: 10px; } .demo-cont__credits-name { margin-bottom: 20px; font-size: 30px; } .demo-cont__credits-link { display: block; margin-bottom: 10px; font-size: 24px; color: #fff; } .demo-cont__credits-blend { font-size: 30px; margin-bottom: 10px; } .example-slider { z-index: 2; transform: translate3d(0, 0, 0); transition: transform 0.7s; } .credits-active .example-slider { transform: translate3d(-400px, 0, 0) rotateY(10deg) scale(0.9); } .example-slider .fnc-slide-1 .fnc-slide__inner, .example-slider .fnc-slide-1 .fnc-slide__mask-inner { background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/blackwidow.jpg'); } .example-slider .fnc-slide-2 .fnc-slide__inner, .example-slider .fnc-slide-2 .fnc-slide__mask-inner { background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/captainamerica.jpg'); } .example-slider .fnc-slide-3 .fnc-slide__inner, .example-slider .fnc-slide-3 .fnc-slide__mask-inner { background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/ironman-alt.jpg'); } .example-slider .fnc-slide-3 .fnc-slide__inner:before { content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.1); } .example-slider .fnc-slide-4 .fnc-slide__inner, .example-slider .fnc-slide-4 .fnc-slide__mask-inner { background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/thor.jpg'); } .example-slider .fnc-slide-4 .fnc-slide__inner:before { content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.2); } .example-slider .fnc-slide__heading, .example-slider .fnc-slide__action-btn, .example-slider .fnc-nav__control { font-family: 'Open Sans', Helvetica, Arial, sans-serif; } .neonText { color: #fff; text-shadow: 0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa; } h1 { text-transform: uppercase; font-weight: 400; font-size: 4.2rem; text-align: center; } .fancy_underline, h4 { font-size: 10px; font-family: "Comic Sans MS; font-weight: 200; font-size: 4.2rem; }</style>
+    </head>     
+    <body> 
+        <div class="hero_area"> 
+                <header class="header_section"> 
+                <div class="container-fluid"> 
+                    <nav class="navbar navbar-expand-lg custom_nav-container"> <a class="navbar-brand" href="index.html"> <span> 
+              Tecno </span> </a> 
+                        <div class="navbar-collapse" id=""> 
+                            <div class="custom_menu-btn"> 
+                                <button onclick="openNav()"> <span class="s-1"> </span> <span class="s-2"> </span> <span class="s-3"> </span> 
+                                </button>                                 
+                            </div>                             
+                            <div id="myNav" class="overlay"> 
+                                <div class="overlay-content"> <a href="">HOME</a> <a href="">ABOUT</a> <a href="">FEATURE</a> <a href="">CONTACT US</a> 
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                    </nav>                     
+                </div>                 
+            </header>             
+                <section class=" slider_section position-relative"> 
+                <div class="container"> 
+                    <div class="row"> 
+                        <div class="col-md-7"> 
+                            <div class="detail-box"> 
+                                <h2> 
+                best Service </h2> 
+                                <h1> 
+                Rate <br/> 
+                series,movies</h1> 
+                                <div> <a href=""> 
+                  Read More </a> 
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                        <div class="col-md-5"> 
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"> 
+                                <ol class="carousel-indicators"> 
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>                                     
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>                                     
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>                                     
+                                </ol>                                 
+                                <div class="carousel-inner"> 
+                                    <div class="carousel-item active"> 
+                                        <div class="img-box"> <a href="https://www.youtube.com/watch?v=_QZpK2OT1Ws" data-lity> <button class="btn btn-primary btn-sm" type="button">Game of thrones</button><img alt="game" src="https://sm.ign.com/ign_mear/gallery/g/game-of-th/game-of-thrones-season-8-photos_pm9s.jpg" " " class="border-dark img-thumbnail"/> </a>
+                                        </div>                                         
+                                        <div id="iframeDisplay"></div>                                         
+                                    </div>                                     
+                                    <div class="carousel-item"> 
+                                        <div class="img-box"> <a href="https://www.youtube.com/watch?v=HhesaQXLuRY" data-lity> <button class="btn btn-primary btn-sm" type="button">breaking bad</button> <img src="https://occ-0-2219-37.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABbFI2wcwiGkHDdGWaw58hWgLETOBsbqqv6GbKnZFn3s_Y4fjw0Ys9DNYD5txnfV3oj9tgsBeaSnPcBOwQqQnpHVqHeQr9FtvVzaL.jpg?r=776" alt="" class="img-thumbnail"/> </a>
+                                        </div>                                         
+                                    </div>                                     
+                                    <div class="carousel-item"> 
+                                        <div class="img-box"> <a href="https://www.youtube.com/watch?v=AL9zLctDJaU" data-lity> <button class="btn btn-primary btn-sm" type="button">Prison break</button> <img src="https://ntvb.tmsimg.com/assets/p12900907_b_h10_aa.jpg?w=1280&h=720" alt="" class="img-thumbnail"/> </a>
+                                        </div>                                         
+                                    </div>                                     
+                                </div>                                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"> <span class="sr-only">Next</span> </a> 
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                </div>                 
+            </section>             
+                </div>         
+            <section class="feature_section layout_padding2 layout_margin"> 
+            <div class="container"> 
+                <div class="heading_container"> 
+                    <h2>Amazing Features To Use <br/> 
+          Our Services</h2> 
+                </div>                 
+            </div>             
+            <div class="container"> 
+                <div class="row"> 
+                    <div class="col-md-4"> 
+                        <div class="box"> 
+                            <div class="head-box"> 
+                                <div class="img-box"> 
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 210.233 210.233" style="enable-background:new 0 0 210.233 210.233;" xml:space="preserve">
+                                        <g>
+                                            <g>
+                                                <g>
+                                                    <path d="M33.736,86.705c3.297,2.671,7.267,3.969,11.214,3.969c5.206,0,10.366-2.258,13.891-6.608
+				c6.19-7.651,5.009-18.911-2.638-25.103c-3.703-3-8.336-4.379-13.101-3.881c-4.741,0.498-9.006,2.812-12.008,6.518
+				c-3.002,3.706-4.377,8.357-3.881,13.099C27.712,79.44,30.029,83.703,33.736,86.705z M37.261,66.591
+				c1.666-2.059,4.036-3.345,6.67-3.622c0.353-0.037,0.705-0.054,1.054-0.054c2.262,0,4.439,0.767,6.225,2.212
+				c4.246,3.44,4.904,9.696,1.464,13.945c-3.44,4.251-9.704,4.906-13.949,1.466c-2.057-1.668-3.347-4.036-3.622-6.67
+				C34.828,71.234,35.592,68.65,37.261,66.591z"/>
+                                                    <path d="M113.468,134.565c-4.509-1.551-9.347-1.257-13.635,0.835c-4.284,2.09-7.499,5.723-9.053,10.232
+				c-1.554,4.509-1.255,9.353,0.833,13.635c2.092,4.286,5.725,7.501,10.234,9.053c1.902,0.656,3.866,0.982,5.826,0.982
+				c2.673,0,5.334-0.608,7.81-1.815c4.284-2.09,7.499-5.724,9.053-10.232s1.255-9.353-0.837-13.637
+				C121.611,139.334,117.977,136.118,113.468,134.565z M117.032,154.671c-0.86,2.506-2.646,4.524-5.028,5.685
+				c-2.382,1.161-5.063,1.33-7.577,0.463c-2.503-0.862-4.52-2.648-5.683-5.028c-1.162-2.38-1.325-5.071-0.461-7.575
+				c0.86-2.506,2.646-4.524,5.028-5.685c1.395-0.682,2.874-1.003,4.331-1.003c3.672,0,7.209,2.049,8.929,5.568
+				C117.733,149.477,117.896,152.167,117.032,154.671z"/>
+                                                    <path d="M150.694,107c-2.526-4.044-6.477-6.86-11.125-7.935c-4.633-1.065-9.421-0.271-13.473,2.256
+				c-4.044,2.528-6.86,6.477-7.933,11.123c-2.212,9.589,3.789,19.192,13.38,21.408c1.344,0.31,2.688,0.459,4.013,0.459
+				c8.123,0,15.491-5.594,17.393-13.837C154.022,115.83,153.22,111.044,150.694,107z M145.217,118.691
+				c-1.228,5.324-6.551,8.652-11.892,7.432c-5.326-1.232-8.662-6.568-7.43-11.896c0.593-2.58,2.161-4.772,4.408-6.176
+				c1.596-0.998,3.397-1.511,5.233-1.511c0.748,0,1.503,0.085,2.251,0.256c2.58,0.597,4.776,2.163,6.178,4.41
+				C145.372,113.449,145.814,116.109,145.217,118.691z"/>
+                                                    <path d="M52.403,112.444c-1.073-4.647-3.889-8.596-7.933-11.123c-4.044-2.527-8.832-3.33-13.473-2.255
+				c-4.649,1.073-8.6,3.889-11.125,7.933c-2.525,4.044-3.328,8.83-2.255,13.473c1.902,8.245,9.27,13.837,17.393,13.837
+				c1.325,0,2.669-0.147,4.013-0.459C48.615,131.636,54.615,122.033,52.403,112.444z M37.242,126.12
+				c-5.322,1.236-10.66-2.106-11.892-7.432c-0.597-2.58-0.155-5.239,1.251-7.484c1.402-2.247,3.599-3.814,6.178-4.408
+				c0.748-0.173,1.503-0.257,2.251-0.257c1.836,0,3.637,0.513,5.233,1.511c2.247,1.404,3.816,3.597,4.408,6.176
+				C45.903,119.554,42.568,124.891,37.242,126.12z"/>
+                                                    <path d="M103.133,53.417c0-9.843-8.007-17.85-17.85-17.85s-17.85,8.007-17.85,17.85s8.007,17.85,17.85,17.85
+				S103.133,63.26,103.133,53.417z M85.283,63.333c-5.47,0-9.917-4.449-9.917-9.917c0-5.468,4.447-9.917,9.917-9.917
+				c5.47,0,9.917,4.449,9.917,9.917C95.2,58.884,90.753,63.333,85.283,63.333z"/>
+                                                    <path d="M125.616,90.674c3.947,0,7.918-1.298,11.214-3.969c3.707-3.002,6.024-7.265,6.523-12.008
+				c0.496-4.741-0.879-9.394-3.881-13.099c-6.194-7.647-17.459-8.826-25.105-2.638c-7.651,6.194-8.832,17.455-2.642,25.105
+				C115.25,88.415,120.41,90.674,125.616,90.674z M119.356,65.127c4.257-3.446,10.509-2.783,13.949,1.464
+				c1.67,2.059,2.433,4.643,2.157,7.277c-0.275,2.634-1.565,5.003-3.622,6.67c-4.257,3.446-10.505,2.785-13.949-1.466
+				C114.452,74.823,115.111,68.567,119.356,65.127z"/>
+                                                    <path d="M70.734,135.4c-4.288-2.092-9.127-2.388-13.635-0.835c-4.508,1.553-8.142,4.768-10.23,9.053
+				c-2.092,4.284-2.39,9.128-0.837,13.637c1.553,4.509,4.768,8.142,9.053,10.232c2.475,1.207,5.136,1.815,7.81,1.815
+				c1.956,0,3.924-0.325,5.826-0.982c4.509-1.551,8.142-4.767,10.23-9.051c2.092-4.284,2.39-9.128,0.837-13.637
+				C78.235,141.123,75.018,137.489,70.734,135.4z M71.818,155.793c-1.158,2.378-3.177,4.164-5.679,5.026
+				c-2.51,0.868-5.195,0.697-7.577-0.463c-2.382-1.16-4.168-3.178-5.028-5.685c-0.864-2.504-0.701-5.195,0.461-7.575
+				c1.72-3.519,5.257-5.568,8.929-5.568c1.457,0,2.936,0.322,4.331,1.003c2.382,1.16,4.168,3.178,5.028,5.685
+				C73.147,150.72,72.984,153.41,71.818,155.793z"/>
+                                                    <path d="M210.209,185.862c-0.239-2.175-2.176-3.761-4.38-3.504c-32.059,3.517-44.853-33.426-45.384-35.001
+				c-0.135-0.403-0.371-0.734-0.61-1.059c6.817-12.251,10.733-26.328,10.733-41.315c0-47.025-38.257-85.283-85.283-85.283
+				C38.259,19.7,0,57.959,0,104.983c0,47.024,38.257,85.283,85.283,85.283c28.642,0,53.972-14.238,69.445-35.959
+				c4.734,10.535,19.118,36.226,46.808,36.226c1.674,0,3.397-0.095,5.167-0.292C208.88,190.001,210.449,188.039,210.209,185.862z
+				 M85.283,182.333c-42.65,0-77.35-34.699-77.35-77.35s34.7-77.35,77.35-77.35c42.65,0,77.35,34.699,77.35,77.35
+				S127.933,182.333,85.283,182.333z"/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                        <g>
+</g>
+                                        <g>
+</g>
+                                        <g>
+</g>
+                                        <g>
+</g>
+                                        <g>
+</g>
+                                        <g>
+</g>
+                                        <g>
+</g>
+                                        <g>
+</g>
+                                        <g>
+</g>
+                                        <g>
+</g>
+                                        <g>
+</g>
+                                        <g>
+</g>
+                                        <g>
+</g>
+                                        <g>
+</g>
+                                        <g>
+</g>
+                                    </svg>                                     
+                                </div>                                 
+                                <h6> 
+                 Movie and serie Review </h6> 
+                            </div>                             
+                            <div class="detail-box"> 
+                                <p> 
+                we help you to determine if others were entertained by a movie before you spend your time and money on it. </p> 
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                    <div class="col-md-4"> 
+                        <div class="box"> 
+                            <div class="head-box"> 
+                                <div class="img-box"> 
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="256px" height="159px" viewBox="0 0 256 159" style="enable-background:new 0 0 256 159;" xml:space="preserve">
+                                        <path d="M116.1,2.3c18.5,0,33.5,15,33.5,33.5s-15,33.5-33.5,33.5s-33.5-15-33.5-33.5S97.6,2.3,116.1,2.3z M242.9,60.3
+	c-12.1-6.3-28.3,1.9-37.1,18.7v0c-4,7.6-5.7,15.8-5,23.2c0.6,5.8,2.8,10.8,6.2,14.3l-8.6,14.4H160v-21.8c0-13.3-9.5-24.7-22.6-27.1
+	L70.2,69.8c-18-3.3-36,5.6-44.3,21.8l-22,42.6c-5.4,10.2,2,22.5,13.5,22.5l57,0c7.3,0,13.2-5.9,13.2-13.2s-5.9-13.2-13.2-13.2h-25
+	c-2.2,0-3.9-1.8-3.9-3.9s1.8-3.9,3.9-3.9h25c11.6,0,21,9.4,21,21c0,5-1.8,9.6-4.7,13.2h17.7l14.3,0l9.8-25.2v14
+	c0,6.2,5,11.2,11.2,11.2h55c7.1,0,12.9-5.8,12.9-12.9c0-2.8-0.9-5.5-2.5-7.6l8.6-14.3c0.9,0.1,1.9,0.2,2.9,0.2
+	c10.3,0,21.6-7.8,28.3-20.8C257.6,84.6,255,66.6,242.9,60.3z M238.4,95.9c-6,11.4-15.9,16.4-21.1,13.7c-3.4-1.8-4.3-6.1-4.6-8.6
+	c-0.5-5,0.8-11.1,3.7-16.6v0c6-11.4,15.9-16.4,21.1-13.7C242.7,73.5,244.3,84.5,238.4,95.9z"/>
+                                    </svg>                                     
+                                </div>                                 
+                                <h6> 
+                Find your favorite movie actor </h6> 
+                            </div>                             
+                            <div class="detail-box"> 
+                                <p> 
+                 we will help you to find out if your favorite actor has been in other movies you may have missed. </p> 
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                    <div class="col-md-4"> 
+                        <div class="box"> 
+                            <div class="head-box"> 
+                                <div class="img-box"> 
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                        <g>
+                                            <g>
+                                                <polygon points="389.565,205.913 389.565,172.522 300.522,172.522 300.522,339.478 389.565,339.478 389.565,306.087 
+			333.913,306.087 333.913,272.696 389.565,272.696 389.565,239.304 333.913,239.304 333.913,205.913 		"/>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                                <polygon points="100.174,205.913 100.174,172.522 0,172.522 0,339.478 33.391,339.478 33.391,272.696 100.174,272.696 
+			100.174,239.304 33.391,239.304 33.391,205.913 		"/>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                                <polygon points="512,205.913 512,172.522 422.957,172.522 422.957,339.478 512,339.478 512,306.087 456.348,306.087 
+			456.348,272.696 512,272.696 512,239.304 456.348,239.304 456.348,205.913 		"/>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                                <path d="M133.565,172.522v166.957h33.391v-66.783h33.391v33.391h33.391v-33.391H256V172.522H133.565z M222.609,239.304h-55.652
+			v-33.391h55.652V239.304z"/>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                                <rect x="233.739" y="306.087" width="33.391" height="33.391"/>
+                                            </g>
+                                        </g>
+                                        <g>
+</g>
+                                        <g>
+</g>
+                                        <g>
+</g>
+                                        <g>
+</g>
+                                        <g>
+</g>
+                                        <g>
+</g>
+                                        <g>
+</g>
+                                        <g>
+</g>
+                                        <g>
+</g>
+                                        <g>
+</g>
+                                        <g>
+</g>
+                                        <g>
+</g>
+                                        <g>
+</g>
+                                        <g>
+</g>
+                                        <g>
+</g>
+                                    </svg>                                     
+                                </div>                                 
+                                <h6> 
+                Free without payment </h6> 
+                            </div>                             
+                            <div class="detail-box"> 
+                                <p> 
+                We will provide you our service for free without ads but you can support us on paypal . </p> 
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                </div>                 
+            </div>             
+            <div class="d-flex justify-content-center"> <a href=""> 
+        Read More </a> 
+            </div>             
+        </section>
+        <h1></h1> 
+       <section class="download_section layout_padding-bottom"> 
+            <div class="demo-cont">
+             <div class="fnc-slider example-slider">
+                    <div class="fnc-slider__slides">
+                    <div class="fnc-slide m--blend-green m--active-slide">
+                            <div class="fnc-slide__inner">
+                                <div class="fnc-slide__mask">
+                                    <div class="fnc-slide__mask-inner"></div>
+                                </div>
+                                <div class="fnc-slide__content">
+                                    <h2 class="fnc-slide__heading"> <div class="fnc-slide__heading-line"><span>Black</span>
+                                        </div> <div class="fnc-slide__heading-line"><span>Widow</span>
+                                        </div> </h2>
+                                    <button type="button" class="fnc-slide__action-btn">
+                                        AVENGERS<span data-text="Credits">AVENGERS</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fnc-slide m--blend-dark">
+                            <div class="fnc-slide__inner">
+                                <div class="fnc-slide__mask">
+                                    <div class="fnc-slide__mask-inner"></div>
+                                </div>
+                                <div class="fnc-slide__content">
+                                    <h2 class="fnc-slide__heading"> <div class="fnc-slide__heading-line"><span>Captain</span>
+                                        </div> <div class="fnc-slide__heading-line"><span>America</span>
+                                        </div> </h2>
+                                    <button type="button" class="fnc-slide__action-btn">
+                                        AVENGERS<span data-text="Credits">AVENGERS</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="fnc-slide m--blend-red">
+                            <div class="fnc-slide__inner">
+                                <div class="fnc-slide__mask">
+                                    <div class="fnc-slide__mask-inner"></div>
+                                </div>
+                                <div class="fnc-slide__content">
+                                    <h2 class="fnc-slide__heading"> <div class="fnc-slide__heading-line"><span>Iron</span>
+                                        </div> <div class="fnc-slide__heading-line"><span>Man</span>
+                                        </div> </h2>
+                                    <button type="button" class="fnc-slide__action-btn">
+                                        AVENGERS<span data-text="Credits">AVENGERS</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="fnc-slide m--blend-blue">
+                            <div class="fnc-slide__inner">
+                                <div class="fnc-slide__mask">
+                                    <div class="fnc-slide__mask-inner"></div>
+                                </div>
+                                <div class="fnc-slide__content">
+                                    <h2 class="fnc-slide__heading"> <div class="fnc-slide__heading-line"><span>Thor</span>
+                                        </div> <div class="fnc-slide__heading-line"><span>Just Thor</span>
+                                        </div> </h2>
+                                    <button type="button" class="fnc-slide__action-btn">
+                                        AVENGERS<span data-text="Credits">AVENGERS</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="fnc-nav">
+                        <div class="fnc-nav__bgs">
+                            <div class="fnc-nav__bg m--navbg-green m--active-nav-bg"></div>
+                            <div class="fnc-nav__bg m--navbg-dark"></div>
+                            <div class="fnc-nav__bg m--navbg-red"></div>
+                            <div class="fnc-nav__bg m--navbg-blue"></div>
+                        </div>
+                        <div class="fnc-nav__controls">
+                            <button class="fnc-nav__control">
+                                Black Widow<span class="fnc-nav__control-progress"></span>
+                            </button>
+                            <button class="fnc-nav__control">
+                                Captain America<span class="fnc-nav__control-progress"></span>
+                            </button>
+                            <button class="fnc-nav__control">
+                                Iron Man<span class="fnc-nav__control-progress"></span>
+                            </button>
+                            <button class="fnc-nav__control">
+                                Thor<span class="fnc-nav__control-progress"></span>
+                            </button>
+                        </div>
+                    </nav>
+                </div>
+                <div class="demo-cont__credits">
+                    <h1 class="neonText">
+          The Avengers </h1>
+                    <h4 class="fancy_underline">
+Earth's Mightiest Heroes stand as the planet first line of defense against the most powerful threats in the universe. </h4>
+                </div>
+            </div>             
+        </section>         
+             <section class="about_section layout_padding"> 
+            <div class="container"> 
+                <div class="heading_container d-flex justify-content-lg-start"> 
+                    <h2 class="text-white"> 
+          About Us </h2> 
+                </div>                 
+                <div class="layout_padding2-top"> 
+                    <div class="row"> 
+                        <div class="col-md-5"> 
+                            <div class="detail-box b-1"> 
+                                <p class="text-white">With us you will choose your movie in short time</p> <a href=""> 
+                Read More </a> 
+                            </div>                             
+                        </div>                         
+                        <div class="col-md-5"> 
+                            <div class="detail-box b-2"> 
+                                <p class="text-white">Our site provide best review for movies and series</p> 
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                </div>                 
+            </div>             
+        </section>         
+            <section class="subscribe_section layout_padding"> 
+            <div class="container"> 
+                <div class="heading_container"> 
+                    <h2> 
+          Subscribe For Updates </h2> 
+                </div>                 
+                <form action="" class="layout_padding2-top"> 
+                    <input type="email" placeholder="Enter your email"/> 
+                    <button> 
+                        subscribe
+                </button>                     
+                </form>                 
+            </div>             
+        </section>         
+              
+        <section class="client_section layout_margin"> 
+            <div class="container"> 
+                <div class="heading_container"> 
+                    <h2> 
+          Check what people say About us! </h2> 
+                </div>                 
+                <div class="client_container layout_padding2-top"> 
+                    <div class="client-id"> 
+                        <div class="img-box"> 
+                            <img src="instTecno.jpg" alt=""/> 
+                        </div>                         
+                        <div class="name"> 
+                            <img src="images/quote.png" alt=""/> 
+                            <h6>Alaa ELshreef</h6> 
+                            <p>Student</p> 
+                        </div>                         
+                    </div>                     
+                    <div class="client-detail"> 
+                        <p>This site provide best service,I chose film romantic and saw it with my girl friend and I love it </p> 
+                    </div>                     
+                    <div class="d-flex justify-content-end"> <a href=""> 
+            Read More </a> 
+                    </div>                     
+                </div>                 
+            </div>             
+        </section>         
+            <section class="contact_section layout_padding"> 
+            <div class="container"> 
+                <div class="d-flex "> 
+                    <h2> 
+          Contact Us </h2> 
+                </div>                 
+                <div class="row"> 
+                    <div class="col-md-6"> 
+                        <form action=""> 
+                            <div class="contact_form-container"> 
+                                <div> 
+                                    <div> 
+                                        <input type="text" placeholder="Name"/> 
+                                    </div>                                     
+                                    <div> 
+                                        <input type="text" placeholder="Phone Number"/> 
+                                    </div>                                     
+                                    <div> 
+                                        <input type="email" placeholder="Email"/> 
+                                    </div>                                     
+                                    <div class="mt-5"> 
+                                        <input type="text" placeholder="Message"/> 
+                                    </div>                                     
+                                    <div class="mt-5"> 
+                                        <button type="submit"> 
+                                            send
+</button>                                         
+                                    </div>                                     
+                                </div>                                 
+                            </div>                             
+                        </form>                         
+                    </div>                     
+                </div>                 
+            </div>             
+        </section>         
+         <section class="info_section layout_padding-top"> 
+            <div class="info_logo-box"> 
+                <h2>Tecno</h2> 
+            </div>             
+            <div class="container layout_padding2"> 
+                <div class="row"> 
+                    <div class="col-md-3"> 
+                        <h5> 
+            About Us </h5> 
+                        <p>Our site provide best review for movies and series</p> 
+                    </div>                     
+                    <div class="col-md-3"> 
+                        <h5> 
+            Our Service </h5> 
+                        <ul> 
+                            <li> <a href=""> 
+                Best Series </a> 
+                            </li>                             
+                            <li> <a href=""> 
+                Best movies </a> 
+                            </li>                             
+                        </ul>                         
+                    </div>                     
+                    <div class="col-md-4"> 
+                        <h5> 
+            Contact Us </h5> 
+                        <p>you can contact us and we will reply .</p> 
+                    </div>                     
+                </div>                 
+            </div>             
+            <div class="container"> 
+                <div class="social_container"> 
+                    <div class="social-box"> <a href=""> <img src="images/fb.png" alt=""/> </a> <a href=""> <img src="images/twitter.png" alt=""/> </a> <a href=""> <img src="images/linkedin.png" alt=""/> </a> <a href=""> <img src="images/instagram.png" alt=""/> </a> 
+                    </div>                     
+                </div>                 
+            </div>             
+        </section>         
+        <section class="container-fluid footer_section"> 
+            <p> 
+      &copy; 2022 All Rights Reserved. Design by <a href="">Tecno</a> </p> 
+        </section>         
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>         
+        <script type="text/javascript" src="js/bootstrap.js"></script>         
+        <script>
+    function openNav() {
+      document.getElementById("myNav").classList.toggle("menu_width");
+      document
+        .querySelector(".custom_menu-btn")
+        .classList.toggle("menu_btn-style");
+    }
+  </script>         
+        <script>
+    function displayIframe() {
+        document.getElementById("iframeDisplay").innerHTML = "<iframe width="1280" height="720" src="https://www.youtube.com/embed/_QZpK2OT1Ws" title="GoT - Battle of the Bastards - Jon Snow y Rickon Stark" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>;
+
+    }
+</script>
+        <script src=" https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "> </script >
+<script src = " https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js " integrity = " sha384
+Tc51Qib027qvyjSMfHjOMaLkfuWVxZxUPnCJA712mCWNIpG9mGCD8wGNIcPD7Txa "
+crossorigin = " anonymous " > </script >
+<script src = " lity.js " > </script >
+<script>
+    (function() {
+
+  var $$ = function(selector, context) {
+    var context = context || document;
+    var elements = context.querySelectorAll(selector);
+    return [].slice.call(elements);
+  };
+
+  function _fncSliderInit($slider, options) {
+    var prefix = ".fnc-";
+
+    var $slider = $slider;
+    var $slidesCont = $slider.querySelector(prefix + "slider__slides");
+    var $slides = $$(prefix + "slide", $slider);
+    var $controls = $$(prefix + "nav__control", $slider);
+    var $controlsBgs = $$(prefix + "nav__bg", $slider);
+    var $progressAS = $$(prefix + "nav__control-progress", $slider);
+
+    var numOfSlides = $slides.length;
+    var curSlide = 1;
+    var sliding = false;
+    var slidingAT = +parseFloat(getComputedStyle($slidesCont)["transition-duration"]) * 1000;
+    var slidingDelay = +parseFloat(getComputedStyle($slidesCont)["transition-delay"]) * 1000;
+
+    var autoSlidingActive = false;
+    var autoSlidingTO;
+    var autoSlidingDelay = 5000; 
+    var autoSlidingBlocked = false;
+
+    var $activeSlide;
+    var $activeControlsBg;
+    var $prevControl;
+
+    function setIDs() {
+      $slides.forEach(function($slide, index) {
+        $slide.classList.add("fnc-slide-" + (index + 1));
+      });
+
+      $controls.forEach(function($control, index) {
+        $control.setAttribute("data-slide", index + 1);
+        $control.classList.add("fnc-nav__control-" + (index + 1));
+      });
+
+      $controlsBgs.forEach(function($bg, index) {
+        $bg.classList.add("fnc-nav__bg-" + (index + 1));
+      });
+    };
+
+    setIDs();
+
+    function afterSlidingHandler() {
+      $slider.querySelector(".m--previous-slide").classList.remove("m--active-slide", "m--previous-slide");
+      $slider.querySelector(".m--previous-nav-bg").classList.remove("m--active-nav-bg", "m--previous-nav-bg");
+
+      $activeSlide.classList.remove("m--before-sliding");
+      $activeControlsBg.classList.remove("m--nav-bg-before");
+      $prevControl.classList.remove("m--prev-control");
+      $prevControl.classList.add("m--reset-progress");
+      var triggerLayout = $prevControl.offsetTop;
+      $prevControl.classList.remove("m--reset-progress");
+
+      sliding = false;
+      var layoutTrigger = $slider.offsetTop;
+
+      if (autoSlidingActive && !autoSlidingBlocked) {
+        setAutoslidingTO();
+      }
+    };
+
+    function performSliding(slideID) {
+      if (sliding) return;
+      sliding = true;
+      window.clearTimeout(autoSlidingTO);
+      curSlide = slideID;
+
+      $prevControl = $slider.querySelector(".m--active-control");
+      $prevControl.classList.remove("m--active-control");
+      $prevControl.classList.add("m--prev-control");
+      $slider.querySelector(prefix + "nav__control-" + slideID).classList.add("m--active-control");
+
+      $activeSlide = $slider.querySelector(prefix + "slide-" + slideID);
+      $activeControlsBg = $slider.querySelector(prefix + "nav__bg-" + slideID);
+
+      $slider.querySelector(".m--active-slide").classList.add("m--previous-slide");
+      $slider.querySelector(".m--active-nav-bg").classList.add("m--previous-nav-bg");
+
+      $activeSlide.classList.add("m--before-sliding");
+      $activeControlsBg.classList.add("m--nav-bg-before");
+
+      var layoutTrigger = $activeSlide.offsetTop;
+
+      $activeSlide.classList.add("m--active-slide");
+      $activeControlsBg.classList.add("m--active-nav-bg");
+
+      setTimeout(afterSlidingHandler, slidingAT + slidingDelay);
+    };
+
+
+
+    function controlClickHandler() {
+      if (sliding) return;
+      if (this.classList.contains("m--active-control")) return;
+      if (options.blockASafterClick) {
+        autoSlidingBlocked = true;
+        $slider.classList.add("m--autosliding-blocked");
+      }
+
+      var slideID = +this.getAttribute("data-slide");
+
+      performSliding(slideID);
+    };
+
+    $controls.forEach(function($control) {
+      $control.addEventListener("click", controlClickHandler);
+    });
+
+    function setAutoslidingTO() {
+      window.clearTimeout(autoSlidingTO);
+      var delay = +options.autoSlidingDelay || autoSlidingDelay;
+      curSlide++;
+      if (curSlide > numOfSlides) curSlide = 1;
+
+      autoSlidingTO = setTimeout(function() {
+        performSliding(curSlide);
+      }, delay);
+    };
+
+    if (options.autoSliding || +options.autoSlidingDelay > 0) {
+      if (options.autoSliding === false) return;
+      
+      autoSlidingActive = true;
+      setAutoslidingTO();
+      
+      $slider.classList.add("m--with-autosliding");
+      var triggerLayout = $slider.offsetTop;
+      
+      var delay = +options.autoSlidingDelay || autoSlidingDelay;
+      delay += slidingDelay + slidingAT;
+      
+      $progressAS.forEach(function($progress) {
+        $progress.style.transition = "transform " + (delay / 1000) + "s";
+      });
+    }
+    
+    $slider.querySelector(".fnc-nav__control:first-child").classList.add("m--active-control");
+
+  };
+
+  var fncSlider = function(sliderSelector, options) {
+    var $sliders = $$(sliderSelector);
+
+    $sliders.forEach(function($slider) {
+      _fncSliderInit($slider, options);
+    });
+  };
+
+  window.fncSlider = fncSlider;
+}());
+
+
+fncSlider(".example-slider", {autoSlidingDelay: 4000});
+
+var $demoCont = document.querySelector(".demo-cont");
+
+[].slice.call(document.querySelectorAll(".fnc-slide__action-btn")).forEach(function($btn) {
+  $btn.addEventListener("click", function() {
+    $demoCont.classList.toggle("credits-active");
+  });
+});
+
+document.querySelector(".demo-cont__credits-close").addEventListener("click", function() {
+  $demoCont.classList.remove("credits-active");
+});
+
+document.querySelector(".js-activate-global-blending").addEventListener("click", function() {
+  document.querySelector(".example-slider").classList.toggle("m--global-blending-active");
+});
+</script>
+    </body>
